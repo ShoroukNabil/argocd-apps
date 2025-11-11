@@ -5,8 +5,7 @@ metadata:
 spec:
   selector:
     app: nginx
-  type: NodePort    # Minikube-friendly
+  type: LoadBalancer
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30080
